@@ -1,0 +1,2 @@
+django-modeltranslation==0.16.0
+django-tinymce==3.3.0
