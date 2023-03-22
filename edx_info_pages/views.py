@@ -2,7 +2,7 @@ import logging
 
 from common.djangoapps.edxmako.shortcuts import render_to_response
 from django.contrib.sites.models import Site
-from edx_info_pages.models import InfoPage
+from edx_info_pages.models import InfoPage, PageType
 from lms.djangoapps.static_template_view.views import render
 
 
@@ -14,7 +14,7 @@ def info_page_render(request, template):
     page_name = template.split('.')[0]
 
     page = InfoPage.objects.filter(
-        page=page_name,
+        page__slug=page_name,
         site=current_site
     ).first()
 
@@ -22,4 +22,3 @@ def info_page_render(request, template):
         return render_to_response('edx_info_pages/infopage.html', {'page': page})
 
     return render(request, template)
-

@@ -1,4 +1,4 @@
-from .models import InfoPage
+from .models import InfoPage, PageType
 from django.contrib import admin
 from modeltranslation.admin import TranslationAdmin
 
@@ -18,4 +18,8 @@ class InfoPageAdmin(TranslationAdmin):
         }
 
 
+class PageTypeAdmin(admin.ModelAdmin):
+    list_display = ('slug',)
+
 admin.site.register(InfoPage, InfoPageAdmin)
+admin.site.register(PageType, PageTypeAdmin)
