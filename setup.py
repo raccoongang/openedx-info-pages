@@ -57,7 +57,7 @@ def is_requirement(line):
 setup(
     name='edx-info-pages',
     version=VERSION,
-    install_requires=load_requirements("requirements.txt"),
+    install_requires=load_requirements("requirements/base.txt"),
     description="""Open-edx plugin with custom info pages""",
     long_description=README,
     packages=find_packages(),
