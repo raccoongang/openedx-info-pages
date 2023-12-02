@@ -34,3 +34,25 @@ languages. In case it's not configured the default option will be default platfo
 - `MODELTRANSLATION_DEFAULT_LANGUAGE` language for info page translation.
 Default value is `LANGUAGE_CODE`.
 - To modify TinyMCE config you can update `TINYMCE_DEFAULT_CONFIG`.
+
+## Local development
+
+### Devbox
+
+#### Prerequisites
+Installed https://devbox.sh/
+
+Open development environment: 
+```
+devbox shell
+```
+
+Build requirements w/o opening dev env: 
+```
+devbox run requirements
+```
+
+Run tests w/o opening dev env: 
+```
+devbox run tests
+```

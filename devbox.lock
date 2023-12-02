@@ -1,0 +1,26 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "python310Packages.pip@latest": {
+      "last_modified": "2023-11-19T17:46:56Z",
+      "plugin_version": "0.0.1",
+      "resolved": "github:NixOS/nixpkgs/0bf3f5cf6a98b5d077cdcdb00a6d4b3d92bc78b5#python310Packages.pip",
+      "source": "devbox-search",
+      "version": "23.2.1",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/yfmiqki3zrm2bx3m1lf8022f99kw1r8j-python3.10-pip-23.2.1"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/dp107dx65pm8bkzm5k35lq421874c4ra-python3.10-pip-23.2.1"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/va6syavjclp874lzcjcsm60acbf3y419-python3.10-pip-23.2.1"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/3vmj4wfr07d6na75wha00ka4548fsxk9-python3.10-pip-23.2.1"
+        }
+      }
+    }
+  }
+}

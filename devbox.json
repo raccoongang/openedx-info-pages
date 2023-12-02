@@ -1,0 +1,21 @@
+{
+  "packages": [
+    "python310Packages.pip@latest"
+  ],
+  "env": {
+    "VENV_DIR": ".venv"
+  },
+  "shell": {
+    "init_hook": [
+      ". $VENV_DIR/bin/activate"
+    ],
+    "scripts": {
+      "requirements": [
+        "pip install -U -r requirements/test.txt"
+      ],
+      "tests": [
+        "pytest"
+      ]
+    }
+  }
+}
